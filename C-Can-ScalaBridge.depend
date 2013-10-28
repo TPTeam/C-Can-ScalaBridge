@@ -1,0 +1,43 @@
+# depslib dependency file v1.0
+1372925815 source:/home/andrea/C-Workspace/C-Can-ScalaBridge/c_can_bridge.cpp
+	"c_can_bridge.h"
+
+1372924676 /home/andrea/C-Workspace/C-Can-ScalaBridge/c_can_bridge.h
+	<stdlib.h>
+	"canopenlib_linux_hw.h"
+
+1372922459 /home/andrea/C-Workspace/C-Can-ScalaBridge/canopenlib_linux_hw.h
+	"CANopenLibDefines.h"
+	<pthread.h>
+	"libpcan.h"
+
+1370508076 /home/andrea/C-Workspace/C-Can-ScalaBridge/CANopenLibDefines.h
+
+1370430858 /home/andrea/C-Workspace/C-Can-ScalaBridge/libpcan.h
+	"pcan.h"
+
+1297094196 /home/andrea/C-Workspace/C-Can-ScalaBridge/pcan.h
+	<linux/types.h>
+	<linux/ioctl.h>
+
+1372955868 source:/home/tp/C-Workspace/final/C-Can-ScalaBridge/c_can_bridge.cpp
+	"c_can_bridge.h"
+
+1372955701 /home/tp/C-Workspace/final/C-Can-ScalaBridge/c_can_bridge.h
+	<stdlib.h>
+	"canopenlib_linux_hw.h"
+
+1372948922 /home/tp/C-Workspace/final/C-Can-ScalaBridge/canopenlib_linux_hw.h
+	"CANopenLibDefines.h"
+	<pthread.h>
+	"libpcan.h"
+
+1372948922 /home/tp/C-Workspace/final/C-Can-ScalaBridge/CANopenLibDefines.h
+
+1372948922 /home/tp/C-Workspace/final/C-Can-ScalaBridge/libpcan.h
+	"pcan.h"
+
+1372948922 /home/tp/C-Workspace/final/C-Can-ScalaBridge/pcan.h
+	<linux/types.h>
+	<linux/ioctl.h>
+
