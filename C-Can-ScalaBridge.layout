@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="c_can_bridge.cpp" open="1" top="1" tabpos="0">
-		<Cursor position="1420" topLine="51" />
+	<File name="CANopenLibDefines.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="42" />
 	</File>
-	<File name="c_can_bridge.h" open="0" top="0" tabpos="1">
+	<File name="c_can_bridge.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1420" topLine="0" />
+	</File>
+	<File name="c_can_bridge.h" open="1" top="0" tabpos="2">
 		<Cursor position="1067" topLine="0" />
 	</File>
-	<File name="canopenlib_linux_hw.h" open="0" top="0" tabpos="3">
-		<Cursor position="916" topLine="7" />
+	<File name="canopenlib_linux_hw.h" open="1" top="0" tabpos="3">
+		<Cursor position="916" topLine="0" />
 	</File>
-	<File name="libpcan.h" open="0" top="0" tabpos="4">
+	<File name="libpcan.h" open="1" top="0" tabpos="4">
 		<Cursor position="4982" topLine="108" />
 	</File>
-	<File name="pcan.h" open="0" top="0" tabpos="6">
-		<Cursor position="4901" topLine="91" />
+	<File name="pcan.h" open="1" top="1" tabpos="5">
+		<Cursor position="4901" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

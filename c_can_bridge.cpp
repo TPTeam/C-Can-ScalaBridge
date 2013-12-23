@@ -6,13 +6,15 @@ msgReceived callbacks[MAX_CAN_INTERFACES];
 
 pthread_t threads[MAX_CAN_INTERFACES];
 
+int res;
+
 void initLibrary() {
     canPortLibraryInit();
 }
 
 int openPort(int port, int bitrate, msgReceived function) {
 
-        int res = CANOPEN_ERROR;
+        res = CANOPEN_ERROR;
 
         res = canPortOpen(port);
         if (res!=CANOPEN_OK)
@@ -40,7 +42,6 @@ int openPort(int port, int bitrate, msgReceived function) {
 
 int closePort(int port) {
 
-        int res;
         res = CANOPEN_ERROR;
 
         res = pthread_cancel(threads[port]);
@@ -77,25 +78,32 @@ int writeMsg (    int port,
                             (unsigned int)flags);
 }
 
+long msg_id;
+char msg_content[8];
+unsigned int msg_size;
+unsigned int msg_flags;
+int read_port;
+
 void *readMsgFunction (void *__port) {
-    int port = (long) __port;
-    int ret;
+    /*int*/ read_port = (long) __port;
+    //int ret;
     while(1)
     {
+        /*
         long msg_id;
         char msg_content[8];
         unsigned int msg_size;
         unsigned int msg_flags;
-
-        ret =
-        canPortRead(    port,
+        */
+        res =
+        canPortRead(    read_port,
                         &msg_id,
                         (void*)msg_content,
                         &msg_size,
                         &msg_flags);
 
-        if (ret == CANOPEN_OK) {
-            (*callbacks[port])( port,
+        if (res == CANOPEN_OK) {
+            (*callbacks[read_port])( read_port,
                                 msg_id,
                                 (int)msg_size,
                                 (int)msg_flags,
@@ -104,4 +112,5 @@ void *readMsgFunction (void *__port) {
   }
   return NULL;
 }
+
 
